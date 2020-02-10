@@ -2,6 +2,7 @@ package com.yxh.miaosha.controller;
 
 import com.yxh.miaosha.domain.User;
 import com.yxh.miaosha.redis.RedisService;
+import com.yxh.miaosha.redis.UserKey;
 import com.yxh.miaosha.result.CodeMsg;
 import com.yxh.miaosha.result.Result;
 import com.yxh.miaosha.service.UserService;
@@ -49,7 +50,11 @@ public class SimpleController {
 
     @RequestMapping("/select")
     @ResponseBody
-    public Result<String> getUserByName(){
-        return Result.success(redisService.get("key1",String.class) );
+    public Result<User> getUserByName(){
+        User user = new User();
+        user.setName("lala");
+        user.setId(4);
+        redisService.set(UserKey.getById,"user",user);
+        return Result.success(redisService.get(UserKey.getById, "user",User.class) );
     }
 }

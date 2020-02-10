@@ -16,21 +16,22 @@ public class RedisService {
     @Autowired
     JedisPool jedisPool;
 
-    public <T> T get(String key,Class<T> tClass){
+    public <T> T get(KeyPrefix keyPrefix,String key,Class<T> tClass){
 
         Jedis jedis = null;
 
         try {
             jedis = jedisPool.getResource();
 
-            T t = stringToBean(jedis.get(key),tClass);
+            String reallyKey = keyPrefix.getPrefix()+key;
+            T t = stringToBean(jedis.get(reallyKey),tClass);
             return t;
         }finally {
             returnJedisToPool(jedis);
         }
     }
 
-    public <T> boolean set(String key,T value){
+    public <T> boolean set(KeyPrefix keyPrefix,String key,T value){
 
         Jedis jedis =  null;
 
@@ -40,13 +41,29 @@ public class RedisService {
             if (str==null||str.length()<=0){
                 return false;
             }
-            jedis.set(key,str);
+            String reallyKey = keyPrefix.getPrefix()+key;
+            int seconds = keyPrefix.getExpireSeconds();
+            if (seconds<=0){
+                jedis.set(reallyKey,str);
+            }else {
+                jedis.setex(reallyKey,seconds,str);
+            }
             return true;
         }finally {
             returnJedisToPool(jedis);
         }
     }
 
+    public <T> boolean exists(KeyPrefix keyPrefix,String key){
+        Jedis jedis = null;
+        try {
+            jedis = jedisPool.getResource();
+            String reallyKey = keyPrefix.getPrefix()+key;
+            return jedis.exists(reallyKey);
+        }finally {
+            returnJedisToPool(jedis);
+        }
+    }
     /**
      *fastJSON不能解析Integer、int、String等
      *
@@ -71,7 +88,6 @@ public class RedisService {
 
         return JSON.toJavaObject(JSON.parseObject(str),tClass);
     }
-
     private <T> String beanToString(T value) {
         if (value==null){
             return null;
