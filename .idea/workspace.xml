@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d325b3-f0c3-4ff1-ae8b-65be05e3f435" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/domain/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/JedisPoolFactory.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/RedisConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/RedisService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/result/CodeMsg.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/result/Result.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/service/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/MainApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/MainApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/SimpleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/SimpleController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.propertions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.propertions" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/MainApplication.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/MainApplication.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/controller/SimpleController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/controller/SimpleController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/RedisService.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -173,8 +158,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/RedisService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="686">
-              <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+            <state relative-caret-position="813">
+              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -349,7 +334,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581322007547" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581322406271" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -405,18 +390,18 @@
       <updated>1581227501674</updated>
       <workItem from="1581227506938" duration="20843000" />
       <workItem from="1581264277488" duration="1062000" />
-      <workItem from="1581302635909" duration="15257000" />
+      <workItem from="1581302635909" duration="15782000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37162000" />
+    <option name="totallyTimeSpent" value="37687000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="36" width="1853" height="1044" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1869783" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1869783" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -435,7 +420,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32995495" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.32995495" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32995495" />
       <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
@@ -683,8 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/RedisService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="686">
-          <caret line="82" column="23" lean-forward="true" selection-start-line="82" selection-start-column="23" selection-end-line="82" selection-end-column="23" />
+        <state relative-caret-position="813">
+          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

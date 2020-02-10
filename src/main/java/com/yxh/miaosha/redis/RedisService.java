@@ -48,6 +48,7 @@ public class RedisService {
     }
 
     /**
+     *fastJSON不能解析Integer、int、String等
      *
      * @param str 待转换的字符串
      * @param tClass 指定对象类型实例
@@ -58,6 +59,15 @@ public class RedisService {
         if (str==null||str.length()<=0||tClass==null){
             return null;
         }
+        if (tClass==Integer.class || tClass==int.class){
+            return (T) Integer.valueOf(str);
+        }
+        if (tClass==Long.class||tClass==long.class){
+            return (T) Long.valueOf(str);
+        }
+        if (tClass==String.class){
+            return (T) str;
+        }
 
         return JSON.toJavaObject(JSON.parseObject(str),tClass);
     }
@@ -66,7 +76,16 @@ public class RedisService {
         if (value==null){
             return null;
         }
-
+        Class<?> clazz = value.getClass();
+        if (clazz==Integer.class||clazz==int.class){
+            return ""+value;
+        }
+        if (clazz==Long.class||clazz==long.class){
+            return ""+value;
+        }
+        if (clazz==String.class){
+            return (String) value;
+        }
         return JSON.toJSONString(value);
     }
 
