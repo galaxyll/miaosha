@@ -8,7 +8,7 @@ import org.apache.commons.codec.digest.DigestUtils;
  */
 public class MD5Util {
 
-    private static String salt = "tyl687o8p98";
+    private static String salt = "1a2b3c4d";
 
     private static String md5(String src){
         return DigestUtils.md5Hex(src);
@@ -27,4 +27,5 @@ public class MD5Util {
         String dbPass = formPassToDBPass(formPass, saltDB);
         return dbPass;
     }
+
 }
