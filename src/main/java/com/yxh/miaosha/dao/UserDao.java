@@ -1,11 +1,8 @@
 package com.yxh.miaosha.dao;
 
 import com.yxh.miaosha.domain.User;
-import org.apache.ibatis.annotations.Insert;
 import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
-import org.springframework.stereotype.Repository;
 
 /**
  * @author galaxy

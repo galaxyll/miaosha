@@ -106,6 +106,25 @@ public class RedisService {
     }
 
     /**
+     * 删除指定键值对
+     * @param prefix prefix
+     * @param key key
+     * @return boolean
+     */
+    public boolean delete(KeyPrefix prefix, String key) {
+        Jedis jedis = null;
+        try {
+            jedis =  jedisPool.getResource();
+
+            String realKey  = prefix.getPrefix() + key;
+            long ret =  jedis.del(realKey);
+            return ret > 0;
+        }finally {
+            returnJedisToPool(jedis);
+        }
+    }
+
+    /**
      * 将连接池返回的jedis回收，当有datasource时，.close()方法不是关闭而是回收
      *
      * @param jedis

@@ -8,7 +8,7 @@ package com.yxh.miaosha.result;
 public class    Result <T>{
 
     private Result(T data) {
-        this.code = 200;
+        this.code = 0;
         this.msg = "success";
         this.data = data;
     }

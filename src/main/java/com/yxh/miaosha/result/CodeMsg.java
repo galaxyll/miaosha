@@ -16,7 +16,7 @@ public class CodeMsg {
     /**
      * 通用错误对象
      */
-    public static CodeMsg SUCCESS= new CodeMsg(200,"success");
+    public static CodeMsg SUCCESS= new CodeMsg(0,"success");
     public static CodeMsg SERVER_ERROR = new CodeMsg(500,"服务器异常");
     public static CodeMsg PARAM_EMPTY = new CodeMsg(501,"参数为空");
     public static CodeMsg PARAM_ERROR = new CodeMsg(502,"参数格式错误");

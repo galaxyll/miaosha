@@ -28,4 +28,8 @@ public class MD5Util {
         return dbPass;
     }
 
+    public static void main(String[] args) {
+        System.out.println(formPassToDBPass("e7204e8624b1cf00f6ba56f88e47a455","2020aaa"));
+    }
+
 }

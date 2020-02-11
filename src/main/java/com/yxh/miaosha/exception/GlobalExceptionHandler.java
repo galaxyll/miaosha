@@ -19,7 +19,7 @@ import java.util.List;
 @ResponseBody
 public class GlobalExceptionHandler {
 
-    @ExceptionHandler(Exception.class)
+    @ExceptionHandler({GlobalException.class,BindException.class})
     public Result<String> exceptionHandler(HttpServletRequest httpServletRequest, Exception e){
 
         if (e instanceof GlobalException){
