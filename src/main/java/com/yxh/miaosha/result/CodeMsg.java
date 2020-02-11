@@ -21,6 +21,7 @@ public class CodeMsg {
 
     public static CodeMsg PARAM_EMPTY = new CodeMsg(501,"参数为空");
     public static CodeMsg PARAM_ERROR = new CodeMsg(502,"参数格式错误");
+    public static CodeMsg ACCOUNT_NOT_FOUND = new CodeMsg(400,"账号不存在");
     public int getCode() {
         return code;
     }

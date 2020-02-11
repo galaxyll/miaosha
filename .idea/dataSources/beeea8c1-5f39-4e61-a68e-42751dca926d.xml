@@ -1127,16 +1127,56 @@
     <table id="283" parent="5" name="user"/>
     <column id="284" parent="283" name="id">
       <Position>1</Position>
-      <DataType>int(11)|0s</DataType>
+      <Comment>用户id</Comment>
+      <DataType>bigint(20)|0s</DataType>
       <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <column id="285" parent="283" name="name">
+    <column id="285" parent="283" name="nickname">
       <Position>2</Position>
-      <DataType>varchar(20)|0s</DataType>
+      <Comment>用户昵称</Comment>
+      <DataType>varchar(64)|0s</DataType>
+      <NotNull>1</NotNull>
       <ColumnKind>normal</ColumnKind>
     </column>
-    <key id="286" parent="283" name="PRIMARY">
+    <column id="286" parent="283" name="password">
+      <Position>3</Position>
+      <Comment>用户密码</Comment>
+      <DataType>varchar(32)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="287" parent="283" name="salt">
+      <Position>4</Position>
+      <Comment>无法分离的盐</Comment>
+      <DataType>varchar(10)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="288" parent="283" name="head">
+      <Position>5</Position>
+      <Comment>用户头像</Comment>
+      <DataType>varchar(128)|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="289" parent="283" name="register_date">
+      <Position>6</Position>
+      <Comment>注册时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="290" parent="283" name="last_login_date">
+      <Position>7</Position>
+      <Comment>上次登录时间</Comment>
+      <DataType>datetime|0s</DataType>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <column id="291" parent="283" name="login_count">
+      <Position>8</Position>
+      <Comment>登陆次数</Comment>
+      <DataType>int(11)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+      <ColumnKind>normal</ColumnKind>
+    </column>
+    <key id="292" parent="283" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
