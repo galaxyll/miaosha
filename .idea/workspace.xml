@@ -2,31 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d325b3-f0c3-4ff1-ae8b-65be05e3f435" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/config/UserArgumentResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/config/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/GoodsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/util/UUIDUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/config/UserArgumentResolver.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/config/WebConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/controller/GoodsController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/util/UUIDUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/exception/GlobalExceptionHandler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/RedisService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/RedisService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/UserKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/UserKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/result/CodeMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/result/CodeMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/result/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/result/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/util/MD5Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/util/MD5Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/exception/GlobalExceptionHandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/exception/GlobalExceptionHandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/redis/RedisService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/redis/RedisService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/redis/UserKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/redis/UserKey.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/result/CodeMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/result/CodeMsg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/result/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/result/Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/service/UserService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/util/MD5Util.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/util/MD5Util.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -103,13 +79,18 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/config/UserArgumentResolver.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="248">
               <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
@@ -193,6 +174,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/GoodsController.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/config/UserArgumentResolver.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -256,6 +238,21 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
+              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -273,7 +270,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581419175149" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581419242883" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -363,15 +360,16 @@
       <workItem from="1581227506938" duration="20843000" />
       <workItem from="1581264277488" duration="1062000" />
       <workItem from="1581302635909" duration="52168000" />
-      <workItem from="1581410218039" duration="8653000" />
+      <workItem from="1581410218039" duration="9046000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82726000" />
+    <option name="totallyTimeSpent" value="83119000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="36" width="1853" height="1044" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20367278" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -392,9 +390,9 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" weight="0.32995495" />
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32995495" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.5371622" />
-      <window_info anchor="bottom" id="Docker" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.5371622" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -912,6 +910,9 @@
           <caret line="49" column="44" lean-forward="true" selection-start-line="49" selection-start-column="44" selection-end-line="49" selection-end-column="44" />
         </state>
       </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
