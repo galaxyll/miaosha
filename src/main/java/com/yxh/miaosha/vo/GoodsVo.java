@@ -1,34 +1,18 @@
-package com.yxh.miaosha.domain;
+package com.yxh.miaosha.vo;
+
+import com.yxh.miaosha.domain.Goods;
 
 import java.util.Date;
 
 /**
  * @author galaxy
- * @date 20-2-11 - 下午8:48
+ * @date 20-2-11 - 下午9:38
  */
-public class MiaoshaGoods {
-    private Long id;
-    private Long goodsId;
+public class GoodsVo extends Goods {
     private Double miaoshaPrice;
     private Integer stockCount;
     private Date startDate;
     private Date endDate;
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public Long getGoodsId() {
-        return goodsId;
-    }
-
-    public void setGoodsId(Long goodsId) {
-        this.goodsId = goodsId;
-    }
 
     public Double getMiaoshaPrice() {
         return miaoshaPrice;
