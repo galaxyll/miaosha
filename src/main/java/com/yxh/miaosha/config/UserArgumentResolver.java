@@ -45,8 +45,15 @@ public class UserArgumentResolver implements HandlerMethodArgumentResolver {
     }
 
     private String getCookieValue(HttpServletRequest request, String token) {
+
+        Cookie[] cookies = request.getCookies();
+
+        if (cookies==null||cookies.length<=0){
+            return null;
+        }
+
         for (Cookie cookie:
-             request.getCookies()) {
+             cookies) {
             if ("token".equals(cookie.getName())){
                 return cookie.getValue();
             }
