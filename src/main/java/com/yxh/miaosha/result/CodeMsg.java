@@ -4,7 +4,7 @@ package com.yxh.miaosha.result;
  * @author galaxy
  * @date 20-2-9 - 下午3:33
  */
-public class CodeMsg {
+public class    CodeMsg {
     private int code;
     private String msg;
 
@@ -23,7 +23,8 @@ public class CodeMsg {
     public static CodeMsg ACCOUNT_NOT_FOUND = new CodeMsg(400,"账号不存在");
 
     public static CodeMsg BIND_ERROR = new CodeMsg(505,"参数校验异常：%s");
-
+    public static CodeMsg MIAOSHA_OVER = new CodeMsg(504,"秒杀商品已售空");
+    public static CodeMsg MIAOSHA_REPEAT = new CodeMsg(505,"请勿重复秒杀");
     public int getCode() {
         return code;
     }
