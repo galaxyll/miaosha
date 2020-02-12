@@ -44,10 +44,8 @@ public class UserService {
         return user;
     }
     public void updateToken(HttpServletResponse response,String token,User user){
-        String newToken = UUIDUtil.uuid();
-        redisService.set(UserKey.token,newToken,user);
-        redisService.delete(UserKey.token,token);
-        Cookie cookie = new Cookie("token",newToken);
+        redisService.set(UserKey.token,token,user);
+        Cookie cookie = new Cookie("token",token);
         cookie.setMaxAge(UserKey.token.getExpireSeconds());
         cookie.setPath("/");
         response.addCookie(cookie);
