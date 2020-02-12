@@ -29,7 +29,7 @@ public class OrderService {
     public OrderInfo createOrder(User user, GoodsVo goodsVo) {
 
         OrderInfo order = new OrderInfo();
-
+        order.setGoodsId(goodsVo.getId());
         order.setCreateDate(new Date());
         order.setDeliveryAddrId(0L);
         order.setGoodsCount(1);

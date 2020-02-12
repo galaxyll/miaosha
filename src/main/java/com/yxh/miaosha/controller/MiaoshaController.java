@@ -11,6 +11,7 @@ import com.yxh.miaosha.vo.GoodsVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
@@ -18,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
  * @date 20-2-12 - 上午11:44
  */
 @Controller
+@RequestMapping("/miaosha")
 public class MiaoshaController {
 
     @Autowired
@@ -29,6 +31,7 @@ public class MiaoshaController {
     @Autowired
     MiaoshaService miaoshaService;
 
+    @RequestMapping("/do_miaosha")
     public String miaosha(Model model, User user, @RequestParam("goodsId")Long goodsId){
         if (user==null){
             return "login";

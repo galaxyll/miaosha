@@ -2,10 +2,7 @@ package com.yxh.miaosha.dao;
 
 import com.yxh.miaosha.domain.MiaoshaOrder;
 import com.yxh.miaosha.domain.OrderInfo;
-import org.apache.ibatis.annotations.Insert;
-import org.apache.ibatis.annotations.Mapper;
-import org.apache.ibatis.annotations.Select;
-import org.apache.ibatis.annotations.SelectKey;
+import org.apache.ibatis.annotations.*;
 
 /**
  * @author galaxy
@@ -24,7 +21,7 @@ public interface OrderDao {
      * @return MiaoshaOrder
      */
     @Select("select * from miaosha_order where user_id=#{userId} and goods_id=#{goodsId}")
-    public MiaoshaOrder getMiaoshaOrderByUGId(Long userId, Long goodsId);
+    public MiaoshaOrder getMiaoshaOrderByUGId(@Param("userId") Long userId, @Param("goodsId") Long goodsId);
 
     /**
      * 将订单对象插入数据库，返回订单编号
