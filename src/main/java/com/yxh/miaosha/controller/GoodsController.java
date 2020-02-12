@@ -63,7 +63,7 @@ public class GoodsController {
             miaoshaStatus = 1;
             remianSeconds = 0;
         }
-        model.addAttribute("remianSeconds",remianSeconds);
+        model.addAttribute("remainSeconds",remianSeconds);
         model.addAttribute("miaoshaStatus",miaoshaStatus);
 
         return "goods_detail";

@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="b5d325b3-f0c3-4ff1-ae8b-65be05e3f435" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/goods_list.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/goods_list.html" afterDir="false" />
-    </list>
+    <list default="true" id="b5d325b3-f0c3-4ff1-ae8b-65be05e3f435" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -93,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/GoodsController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-126">
+            <state relative-caret-position="-378">
               <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -105,19 +103,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/goods_detail.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1512" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/templates/goods_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="497">
-              <caret line="37" column="39" selection-start-line="37" selection-start-column="39" selection-end-line="37" selection-end-column="39" />
-            </state>
+            <state relative-caret-position="-1516" />
           </provider>
         </entry>
       </file>
@@ -182,7 +171,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/UserKey.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/exception/GlobalExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/util/MD5Util.java" />
-        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/beeea8c1-5f39-4e61-a68e-42751dca926d/console.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/result/CodeMsg.java" />
@@ -208,6 +196,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/service/GoodsService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/GoodsController.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/goods_list.html" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/.datagrid/cell" />
       </list>
     </option>
   </component>
@@ -462,18 +451,18 @@
       <workItem from="1581264277488" duration="1062000" />
       <workItem from="1581302635909" duration="52168000" />
       <workItem from="1581410218039" duration="19318000" />
-      <workItem from="1581474123957" duration="1186000" />
+      <workItem from="1581474123957" duration="1902000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94577000" />
+    <option name="totallyTimeSpent" value="95293000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="36" width="1853" height="1044" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.20367278" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.20367278" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Capture Tool" order="3" />
@@ -1069,23 +1058,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/GoodsController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-126">
-          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://beeea8c1-5f39-4e61-a68e-42751dca926d/schema/miaosha/table/miaosha_goods">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/goods_list.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="497">
@@ -1095,7 +1067,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/goods_detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1512" />
+        <state relative-caret-position="-1516" />
+      </provider>
+    </entry>
+    <entry file="das://beeea8c1-5f39-4e61-a68e-42751dca926d/schema/miaosha/table/miaosha_goods">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/GoodsController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-378">
+          <caret line="42" column="52" selection-start-line="42" selection-start-column="52" selection-end-line="42" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
       </provider>
     </entry>
   </component>
