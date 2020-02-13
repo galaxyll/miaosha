@@ -54,7 +54,7 @@ public class UserArgumentResolver implements HandlerMethodArgumentResolver {
 
         for (Cookie cookie:
              cookies) {
-            if ("token".equals(cookie.getName())){
+            if (token.equals(cookie.getName())){
                 return cookie.getValue();
             }
         }
