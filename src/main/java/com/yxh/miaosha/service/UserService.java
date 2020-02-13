@@ -4,7 +4,7 @@ import com.yxh.miaosha.dao.UserDao;
 import com.yxh.miaosha.domain.User;
 import com.yxh.miaosha.exception.GlobalException;
 import com.yxh.miaosha.redis.RedisService;
-import com.yxh.miaosha.redis.UserKey;
+import com.yxh.miaosha.redis.key.UserKey;
 import com.yxh.miaosha.result.CodeMsg;
 import com.yxh.miaosha.util.MD5Util;
 import com.yxh.miaosha.util.UUIDUtil;

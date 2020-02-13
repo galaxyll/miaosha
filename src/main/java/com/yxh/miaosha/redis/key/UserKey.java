@@ -1,4 +1,6 @@
-package com.yxh.miaosha.redis;
+package com.yxh.miaosha.redis.key;
+
+import com.yxh.miaosha.redis.BasePrefix;
 
 /**
  * @author galaxy
