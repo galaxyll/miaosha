@@ -3,8 +3,10 @@ package com.yxh.miaosha.controller;
 import com.yxh.miaosha.domain.User;
 import com.yxh.miaosha.redis.RedisService;
 import com.yxh.miaosha.redis.key.GoodsKey;
+import com.yxh.miaosha.result.Result;
 import com.yxh.miaosha.service.GoodsService;
 import com.yxh.miaosha.service.UserService;
+import com.yxh.miaosha.vo.GoodsDetailVo;
 import com.yxh.miaosha.vo.GoodsVo;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -70,20 +72,64 @@ public class GoodsController {
 
     }
 
+//    @RequestMapping("/to_detail/{goodsId}")
+//    @ResponseBody
+//    public String detail(Model model, User user, @PathVariable("goodsId")Long goodsId,HttpServletRequest request, HttpServletResponse response){
+//
+//        model.addAttribute("user",user);
+//
+//        String html;
+//        html = redisService.get(GoodsKey.goodsDetailKey,goodsId.toString(),String.class);
+//        if (!StringUtils.isEmpty(html)){
+//            return html;
+//        }
+//
+//        GoodsVo goods = goodsService.getGoodsVoById(goodsId);
+//        model.addAttribute("goods",goods);
+//
+//        long startTime = goods.getStartDate().getTime();
+//        long endTime = goods.getEndDate().getTime();
+//        long now = System.currentTimeMillis();
+//
+//        /**
+//         * 0:未开始 1：进行中 2：已结束
+//         */
+//        int miaoshaStatus ;
+//        int remianSeconds ;
+//
+//        if (now<startTime){
+//            miaoshaStatus = 0;
+//            remianSeconds = (int) (startTime-now)/1000;
+//        }else if (now>endTime){
+//            miaoshaStatus = 2;
+//            remianSeconds = -1;
+//        }else {
+//            miaoshaStatus = 1;
+//            remianSeconds = 0;
+//        }
+//        model.addAttribute("remainSeconds",remianSeconds);
+//        model.addAttribute("miaoshaStatus",miaoshaStatus);
+//        SpringWebContext context = new SpringWebContext(request,response,request.getServletContext(),
+//                request.getLocale(),model.asMap(),applicationContext);
+//
+//        html = thymeleafViewResolver.getTemplateEngine().process("goods_detail",context);
+//        if (!StringUtils.isEmpty(html)){
+//            redisService.set(GoodsKey.goodsDetailKey,goodsId.toString(),html);
+//        }
+//        return html;
+//
+//
+//
+//
+////        return "goods_detail";
+//    }
+
     @RequestMapping("/to_detail/{goodsId}")
     @ResponseBody
-    public String detail(Model model, User user, @PathVariable("goodsId")Long goodsId,HttpServletRequest request, HttpServletResponse response){
-
-        model.addAttribute("user",user);
-
-        String html;
-        html = redisService.get(GoodsKey.goodsDetailKey,goodsId.toString(),String.class);
-        if (!StringUtils.isEmpty(html)){
-            return html;
-        }
+    public Result<GoodsDetailVo> detail(Model model, User user, @PathVariable("goodsId")Long goodsId, HttpServletRequest request,
+                                        HttpServletResponse response){
 
         GoodsVo goods = goodsService.getGoodsVoById(goodsId);
-        model.addAttribute("goods",goods);
 
         long startTime = goods.getStartDate().getTime();
         long endTime = goods.getEndDate().getTime();
@@ -105,21 +151,12 @@ public class GoodsController {
             miaoshaStatus = 1;
             remianSeconds = 0;
         }
-        model.addAttribute("remainSeconds",remianSeconds);
-        model.addAttribute("miaoshaStatus",miaoshaStatus);
-        SpringWebContext context = new SpringWebContext(request,response,request.getServletContext(),
-                request.getLocale(),model.asMap(),applicationContext);
-
-        html = thymeleafViewResolver.getTemplateEngine().process("goods_detail",context);
-        if (!StringUtils.isEmpty(html)){
-            redisService.set(GoodsKey.goodsDetailKey,goodsId.toString(),html);
-        }
-        return html;
-
-
-
-
-//        return "goods_detail";
+        GoodsDetailVo goodsDetailVo = new GoodsDetailVo();
+        goodsDetailVo.setGoods(goods);
+        goodsDetailVo.setMiaoshaStatus(miaoshaStatus);
+        goodsDetailVo.setRemianSeconds(remianSeconds);
+        goodsDetailVo.setUser(user);
+        return Result.success(goodsDetailVo);
     }
 
 }
