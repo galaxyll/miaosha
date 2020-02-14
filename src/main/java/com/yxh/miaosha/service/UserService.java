@@ -11,6 +11,7 @@ import com.yxh.miaosha.util.UUIDUtil;
 import com.yxh.miaosha.vo.LoginVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletResponse;
@@ -29,7 +30,18 @@ public class UserService {
     RedisService redisService;
 
     public User getUserById(Long id){
-        return userDao.getUserById(id);
+
+        User user;
+        user = redisService.get(UserKey.id,""+id.toString(),User.class);
+        if (user!=null){
+            return user;
+        }
+
+        user = userDao.getUserById(id);
+        if (user!=null){
+            redisService.set(UserKey.id,""+id,user);
+        }
+        return user;
     }
 
     public User getUserByToken(HttpServletResponse response,String token){
@@ -43,6 +55,7 @@ public class UserService {
         updateToken(response,token,user);
         return user;
     }
+
     public void updateToken(HttpServletResponse response,String token,User user){
         redisService.set(UserKey.token,token,user);
         Cookie cookie = new Cookie("token",token);
@@ -50,7 +63,8 @@ public class UserService {
         cookie.setPath("/");
         response.addCookie(cookie);
     }
-    public boolean login(HttpServletResponse response,LoginVo loginVo){
+
+    public String login(HttpServletResponse response,LoginVo loginVo){
 //
         String mobile = loginVo.getMobile();
         String formPass = loginVo.getPassword();
@@ -64,7 +78,7 @@ public class UserService {
         String dbSalt = user.getSalt();
         String calPass = MD5Util.formPassToDBPass(formPass,dbSalt);
         if (!dbPass.equals(calPass)){
-            return false;
+            return null;
         }
         String token = UUIDUtil.uuid();
         redisService.set(UserKey.token,token,user);
@@ -72,6 +86,15 @@ public class UserService {
         cookie.setPath("/");
         cookie.setMaxAge(UserKey.token.getExpireSeconds());
         response.addCookie(cookie);
+        return token;
+    }
+
+    public boolean register(LoginVo loginVo){
+        String salt = "1a3b5d";
+        String mobile = loginVo.getMobile();
+        String formPass = loginVo.getPassword();
+        String dbPass = MD5Util.formPassToDBPass(formPass,salt);
+        userDao.insertUser(mobile,dbPass,salt);
         return true;
     }
 }

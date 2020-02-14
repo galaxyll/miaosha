@@ -1,6 +1,7 @@
 package com.yxh.miaosha.redis.key;
 
 import com.yxh.miaosha.redis.BasePrefix;
+import com.yxh.miaosha.redis.KeyPrefix;
 
 /**
  * @author galaxy
@@ -17,4 +18,6 @@ public class UserKey extends BasePrefix {
     }
 
     public static UserKey token = new UserKey(60*60*24,"tk");
+
+    public static UserKey id = new UserKey(60*60*24*7,"id");
 }
