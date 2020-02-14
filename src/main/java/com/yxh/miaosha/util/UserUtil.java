@@ -21,8 +21,11 @@ import java.util.List;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 import com.yxh.miaosha.domain.User;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
 
 
+@Controller
 public class UserUtil {
 
     private static void createUser(int count) throws Exception{
@@ -59,7 +62,7 @@ public class UserUtil {
         System.out.println("insert to db");
         //登录，生成token
         String urlString = "http://localhost:8080/login/do_login";
-        File file = new File("/home/galaxy/tokens.txt");
+        File file = new File("/home/yanxh/tokens.txt");
         if(file.exists()) {
             file.delete();
         }
@@ -101,7 +104,8 @@ public class UserUtil {
         System.out.println("over");
     }
 
-    public static void main(String[] args)throws Exception {
+    @RequestMapping("/createUsers")
+    public void mainCreat(String[] args)throws Exception {
         createUser(5000);
     }
 }
