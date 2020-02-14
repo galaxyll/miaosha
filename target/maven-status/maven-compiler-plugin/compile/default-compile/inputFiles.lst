@@ -2,6 +2,7 @@
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/exception/GlobalExceptionHandler.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/util/ValidatoUtil.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/vo/GoodsVo.java
+/home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/redis/key/GoodsKey.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/dao/OrderDao.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/util/UUIDUtil.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/controller/GoodsController.java
@@ -9,10 +10,10 @@
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/domain/MiaoshaGoods.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/controller/MiaoshaController.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/redis/BasePrefix.java
+/home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/redis/key/UserKey.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/exception/GlobalException.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/redis/RedisConfig.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/domain/OrderInfo.java
-/home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/controller/SimpleController.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/controller/LoginController.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/dao/UserDao.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/dao/GoodsDao.java
@@ -20,6 +21,7 @@
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/result/CodeMsg.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/service/OrderService.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/config/WebConfig.java
+/home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/util/DBUtil.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/util/MD5Util.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/controller/UserController.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/validator/IsMobile.java
@@ -28,10 +30,10 @@
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/validator/IsMobileValidator.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/vo/LoginVo.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/service/GoodsService.java
-/home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/redis/UserKey.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/service/UserService.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/config/UserArgumentResolver.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/redis/KeyPrefix.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/redis/JedisPoolFactory.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/result/Result.java
+/home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/util/UserUtil.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/redis/RedisService.java
