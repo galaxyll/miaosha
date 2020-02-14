@@ -1,9 +1,11 @@
 package com.yxh.miaosha.controller;
 
+import com.sun.org.apache.bcel.internal.classfile.Code;
 import com.yxh.miaosha.domain.MiaoshaOrder;
 import com.yxh.miaosha.domain.OrderInfo;
 import com.yxh.miaosha.domain.User;
 import com.yxh.miaosha.result.CodeMsg;
+import com.yxh.miaosha.result.Result;
 import com.yxh.miaosha.service.GoodsService;
 import com.yxh.miaosha.service.MiaoshaService;
 import com.yxh.miaosha.service.OrderService;
@@ -13,6 +15,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
  * @author galaxy
@@ -32,26 +35,25 @@ public class MiaoshaController {
     MiaoshaService miaoshaService;
 
     @RequestMapping("/do_miaosha")
-    public String miaosha(Model model, User user, @RequestParam("goodsId")Long goodsId){
+    @ResponseBody
+    public Result miaosha( User user, @RequestParam("goodsId")Long goodsId){
         if (user==null){
-            return "login";
+            return Result.error(CodeMsg.SESSION_ERROR);
         }
 
         GoodsVo goods = goodsService.getGoodsVoById(goodsId);
         int stock = goods.getStockCount();
         if (stock<=0){
-            model.addAttribute("errmsg", CodeMsg.MIAOSHA_OVER.getMsg());
-            return "miaosha_fail";
+            return Result.error(CodeMsg.MIAOSHA_OVER);
         }
+
         MiaoshaOrder miaoshaOrder = orderService.getMiaoshaOrderByUGId(user.getId(),goodsId);
         if (miaoshaOrder!=null){
-            model.addAttribute("errmsg", CodeMsg.MIAOSHA_REPEAT.getMsg());
+            return Result.error(CodeMsg.MIAOSHA_REPEAT);
         }
 
         OrderInfo order = miaoshaService.miaosha(user,goods);
-        model.addAttribute("orderInfo",order);
-        model.addAttribute("goods",goods);
 
-        return "order_detail";
+        return Result.success(order);
     }
 }

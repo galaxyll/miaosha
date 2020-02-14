@@ -21,6 +21,7 @@ public class    CodeMsg {
     public static CodeMsg PARAM_EMPTY = new CodeMsg(501,"参数为空");
     public static CodeMsg PARAM_ERROR = new CodeMsg(502,"参数格式错误");
     public static CodeMsg ACCOUNT_NOT_FOUND = new CodeMsg(400,"账号不存在");
+    public static CodeMsg SESSION_ERROR = new CodeMsg(502,"session失效或不存在");
 
     public static CodeMsg BIND_ERROR = new CodeMsg(505,"参数校验异常：%s");
     public static CodeMsg MIAOSHA_OVER = new CodeMsg(504,"秒杀商品已售空");
