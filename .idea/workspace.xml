@@ -2,25 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b5d325b3-f0c3-4ff1-ae8b-65be05e3f435" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/config/MyWebMvcConfigurer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/config/MyWebMvcConfigurer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/OrderController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/OrderController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/dao/OrderDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/dao/OrderDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/interceptor/LoginInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/key/UserKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/key/UserKey.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/result/CodeMsg.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/result/CodeMsg.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/service/OrderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/service/OrderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/vo/OrderDetailVo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/vo/OrderDetailVo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/config/MyWebMvcConfigurer.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/config/MyWebMvcConfigurer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/controller/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/controller/OrderController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/controller/OrderController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/dao/OrderDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/dao/OrderDao.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/interceptor/LoginInterceptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/interceptor/LoginInterceptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/redis/key/UserKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/redis/key/UserKey.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/result/CodeMsg.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/result/CodeMsg.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/service/OrderService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/service/OrderService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/vo/OrderDetailVo.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/yxh/miaosha/vo/OrderDetailVo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/static/goods_detail.htm" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/goods_detail.htm" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/dao/GoodsDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/dao/GoodsDao.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -69,82 +51,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/LoginController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="332">
-              <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="86" column="30" selection-start-line="86" selection-start-column="30" selection-end-line="86" selection-end-column="30" />
-              <folding>
-                <element signature="method#getUserByToken#0;class#UserService#0" />
-                <element signature="method#updateToken#0;class#UserService#0" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/key/UserKey.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="532">
-              <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/config/MyWebMvcConfigurer.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/dao/GoodsDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="49" column="109" selection-start-line="49" selection-start-column="109" selection-end-line="49" selection-end-column="109" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2645#2646#0" expanded="true" />
-                <element signature="e#2672#2673#0" expanded="true" />
-                <element signature="e#2747#2748#0" expanded="true" />
-                <element signature="e#2774#2775#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/interceptor/LoginInterceptor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-298">
-              <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/order_detail.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2769">
-              <caret line="95" column="13" lean-forward="true" selection-start-line="95" selection-start-column="13" selection-end-line="95" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/static/goods_detail.htm">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="10122">
-              <caret line="241" column="29" lean-forward="true" selection-start-line="241" selection-start-column="29" selection-end-line="241" selection-end-column="29" />
+            <state relative-caret-position="111">
+              <caret line="45" column="107" selection-start-line="45" selection-start-column="107" selection-end-line="45" selection-end-column="107" />
             </state>
           </provider>
         </entry>
@@ -193,7 +104,6 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/vo/GoodsVo.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/service/MiaoshaService.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/service/GoodsService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/dao/GoodsDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/exception/GlobalExceptionHandler.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/domain/MiaoshaOrder.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
@@ -225,6 +135,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/interceptor/LoginInterceptor.java" />
         <option value="$PROJECT_DIR$/src/main/resources/static/goods_detail.htm" />
         <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/config/MyWebMvcConfigurer.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/yxh/miaosha/dao/GoodsDao.java" />
       </list>
     </option>
   </component>
@@ -310,48 +221,7 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="miaosha" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
-              <item name="interceptor" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="miaosha" type="b2602c69:ProjectViewProjectNode" />
-              <item name="miaosha" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="dao" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -370,7 +240,7 @@
     <property name="RequestMappingsPanelWidth2" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581757641109" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1581758242081" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -478,16 +348,15 @@
       <workItem from="1581474123957" duration="16087000" />
       <workItem from="1581499643048" duration="20365000" />
       <workItem from="1581646199568" duration="24722000" />
-      <workItem from="1581739471253" duration="8575000" />
+      <workItem from="1581739471253" duration="9233000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163140000" />
+    <option name="totallyTimeSpent" value="163798000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="36" width="1853" height="1044" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.294936" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -501,7 +370,7 @@
       <window_info id="Web" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32995495" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.6407658" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.6407658" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -510,7 +379,7 @@
       <window_info anchor="bottom" id="Database Console" order="8" weight="0.32995495" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.5371622" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" visible="true" weight="0.5371622" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="14" weight="0.32995495" />
@@ -627,13 +496,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="das://beeea8c1-5f39-4e61-a68e-42751dca926d/schema/miaosha/table/order_info">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/exception/GlobalExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="756">
@@ -1024,16 +886,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/LoginController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="531">
@@ -1042,13 +894,6 @@
             <element signature="method#getUserByToken#0;class#UserService#0" />
             <element signature="method#updateToken#0;class#UserService#0" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/key/UserKey.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
         </state>
       </provider>
     </entry>
@@ -1087,6 +932,30 @@
             <element signature="e#2747#2748#0" expanded="true" />
             <element signature="e#2774#2775#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/redis/key/UserKey.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="19" column="56" selection-start-line="19" selection-start-column="56" selection-end-line="19" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="350">
+          <caret line="34" column="37" lean-forward="true" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/yxh/miaosha/dao/GoodsDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="45" column="107" selection-start-line="45" selection-start-column="107" selection-end-line="45" selection-end-column="107" />
         </state>
       </provider>
     </entry>

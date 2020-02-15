@@ -43,6 +43,6 @@ public interface GoodsDao {
      * @param goodsVo 秒杀商品信息
      */
 
-    @Update("update miaosha_goods set stock_count=stock_count-1 where goods_id=#{goodsId}")
+    @Update("update miaosha_goods set stock_count=stock_count-1 where goods_id=#{goodsId} and stock_count>0")
     void reduceStock(MiaoshaGoods goodsVo);
 }
