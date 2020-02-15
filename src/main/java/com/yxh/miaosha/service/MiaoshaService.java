@@ -26,6 +26,7 @@ public class MiaoshaService {
     public OrderInfo miaosha(User user, GoodsVo goodsVo){
 
         goodsService.reduceStock(goodsVo);
-        return orderService.createOrder(user,goodsVo);
+        OrderInfo order = orderService.createOrder(user,goodsVo);
+        return order;
     }
 }
