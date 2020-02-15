@@ -25,7 +25,9 @@ public class    CodeMsg {
 
     public static CodeMsg BIND_ERROR = new CodeMsg(505,"参数校验异常：%s");
     public static CodeMsg MIAOSHA_OVER = new CodeMsg(504,"秒杀商品已售空");
-    public static CodeMsg MIAOSHA_REPEAT = new CodeMsg(505,"请勿重复秒杀");
+    public static CodeMsg MIAOSHA_REPEAT = new CodeMsg(506,"请勿重复秒杀");
+    public static CodeMsg ORDER_NOT_EXIST = new CodeMsg(507,"订单不存在");
+
     public int getCode() {
         return code;
     }

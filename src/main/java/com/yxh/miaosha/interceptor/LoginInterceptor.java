@@ -23,6 +23,7 @@ public class LoginInterceptor implements HandlerInterceptor {
         for (Cookie cookie:
              cookies) {
             if ("token".equals(cookie.getName())){
+                System.out.println(cookie.getValue());
                 return true;
             }
         }
