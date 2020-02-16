@@ -11,6 +11,6 @@ Ecs:200+QPS
 Local:5000+QPS 
 
 秒杀 /miaosha/do_miaosha
-未缓存 5000并发
-Ecs:
+未缓存 5000并发*10
+Ecs:1.2wQPS->1500QPS
 Local:2000+QPS
