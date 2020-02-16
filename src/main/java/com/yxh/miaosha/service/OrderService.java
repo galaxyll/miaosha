@@ -38,12 +38,12 @@ public class OrderService {
         order.setOrderChannel(1);
         order.setStatus(0);
         order.setUserId(user.getId());
-        long orderId = orderDao.insertOrder(order);
+        orderDao.insertOrder(order);
 
         MiaoshaOrder miaoshaOrder = new MiaoshaOrder();
         miaoshaOrder.setGoodsId(goodsVo.getId());
         miaoshaOrder.setUserId(user.getId());
-        miaoshaOrder.setOrderId(orderId);
+        miaoshaOrder.setOrderId(order.getId());
         orderDao.insertMiaoshaOrder(miaoshaOrder);
 
         return order;
