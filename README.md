@@ -4,9 +4,11 @@ miaosha project
 
 
 
-用户对象缓存+页面缓存
+
 Ecs:一核+SSD
 Local:八核+HHD
+
+用户对象缓存+页面缓存
 Ecs:200+QPS
 Local:5000+QPS 
 
