@@ -14,6 +14,7 @@ public class MQConfig {
     public static final String QUEUE = "queue";
     public static final String QUEUE1 = "queue1";
     public static final String QUEUE2 = "queue2";
+    public static final String MIAOSHA_QUEUE = "miaoshaQueue";
 
     public static final String TOPIC_EXCHANGE = "topicExchange";
     public static final String FANOUT_EXCHANGE = "fanoutExchange";
@@ -21,6 +22,11 @@ public class MQConfig {
     @Bean
     public Queue queue(){
         return new Queue(QUEUE,true);
+    }
+
+    @Bean
+    public Queue miaoshaQueue(){
+        return new Queue(MIAOSHA_QUEUE,true);
     }
 
     @Bean

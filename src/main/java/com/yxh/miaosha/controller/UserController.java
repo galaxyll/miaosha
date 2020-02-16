@@ -27,10 +27,10 @@ public class UserController {
         userService.register(loginVo);
     }
 
-    @RequestMapping("/queue")
-    @ResponseBody
-    public void send1(){
-        sender.send2("hello galaxy");
-    }
+//    @RequestMapping("/queue")
+//    @ResponseBody
+//    public void send1(){
+//        sender.send2("hello galaxy");
+//    }
 
 }

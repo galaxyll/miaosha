@@ -135,4 +135,15 @@ public class RedisService {
         }
     }
 
+    public <T> Long decr(KeyPrefix prefix, String key) {
+        Jedis jedis = null;
+        try {
+            jedis =  jedisPool.getResource();
+            String realKey  = prefix.getPrefix() + key;
+            return  jedis.decr(realKey);
+        }finally {
+            returnJedisToPool(jedis);
+        }
+    }
+
 }
