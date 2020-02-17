@@ -28,7 +28,7 @@ public class    CodeMsg {
     public static CodeMsg MIAOSHA_REPEAT = new CodeMsg(506,"请勿重复秒杀");
     public static CodeMsg ORDER_NOT_EXIST = new CodeMsg(507,"订单不存在");
     public static CodeMsg REQUEST_ILLEGAL = new CodeMsg(510,"请求非法");
-
+    public static CodeMsg MIAOSHA_ERROR = new CodeMsg(515,"秒杀错误");
     public int getCode() {
         return code;
     }

@@ -24,6 +24,11 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
 
+import javax.imageio.ImageIO;
+import javax.servlet.http.HttpServletResponse;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -133,14 +138,45 @@ public class MiaoshaController implements InitializingBean {
 
     @RequestMapping("/path")
     @ResponseBody
-    public Result<String> getMiaoshaPath(User user,@RequestParam("goodsId") long goodsId){
+    public Result<String> getMiaoshaPath(User user,
+                                         @RequestParam("verifyCode")int verifyCode,
+                                         @RequestParam("goodsId") long goodsId){
         if (user==null){
             return Result.error(CodeMsg.SESSION_ERROR);
         }
+
+        boolean verifyCheck = miaoshaService.checkVerifyCode(user,goodsId,verifyCode);
+        if (!verifyCheck){
+            return Result.error(CodeMsg.MIAOSHA_ERROR);
+        }
+
         String path = MD5Util.md5(UUIDUtil.uuid());
         redisService.set(MiaoshaKey.miaoshaPath,""+user.getId()+goodsId,path);
         return Result.success(path);
     }
+
+    @RequestMapping(value = "/verifyCode",method = RequestMethod.GET)
+    @ResponseBody
+    public Result getMiaoshaVerifyCode(HttpServletResponse response, User user,
+                                               @RequestParam("goodsId") long goodsId){
+        if (user==null){
+            return Result.error(CodeMsg.SESSION_ERROR);
+        }
+
+        BufferedImage image = miaoshaService.createVerifyCode(user,goodsId);
+
+        try {
+            OutputStream out = response.getOutputStream();
+            ImageIO.write(image,"JPEG",out);
+            out.flush();
+            out.close();
+            return null;
+        } catch (Exception e) {
+            e.printStackTrace();
+            return Result.success(CodeMsg.MIAOSHA_ERROR);
+        }
+    }
+
     @Override
     public void afterPropertiesSet() throws Exception {
         List<GoodsVo> goodsVos = goodsService.listGoodsVo();
