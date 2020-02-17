@@ -16,3 +16,7 @@ Local:5000+QPS
 未缓存 5000并发*10
 Ecs:1.2wQPS->1500QPS
 Local:2000+QPS
+
+队列+缓存 5000并发*10
+Ecs:2000+QPS
+Local:8000+QPS
