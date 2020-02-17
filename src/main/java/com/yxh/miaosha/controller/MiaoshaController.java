@@ -1,5 +1,6 @@
 package com.yxh.miaosha.controller;
 
+import com.sun.org.apache.bcel.internal.classfile.Code;
 import com.yxh.miaosha.domain.MiaoshaGoods;
 import com.yxh.miaosha.domain.MiaoshaOrder;
 import com.yxh.miaosha.domain.OrderInfo;
@@ -8,19 +9,20 @@ import com.yxh.miaosha.rabbitmq.MQSender;
 import com.yxh.miaosha.rabbitmq.MiaoshaMessage;
 import com.yxh.miaosha.redis.RedisService;
 import com.yxh.miaosha.redis.key.GoodsKey;
+import com.yxh.miaosha.redis.key.MiaoshaKey;
 import com.yxh.miaosha.result.CodeMsg;
 import com.yxh.miaosha.result.Result;
 import com.yxh.miaosha.service.GoodsService;
 import com.yxh.miaosha.service.MiaoshaService;
 import com.yxh.miaosha.service.OrderService;
+import com.yxh.miaosha.util.MD5Util;
+import com.yxh.miaosha.util.UUIDUtil;
+import com.yxh.miaosha.util.UserUtil;
 import com.yxh.miaosha.vo.GoodsVo;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.HashMap;
 import java.util.List;
@@ -52,14 +54,19 @@ public class MiaoshaController implements InitializingBean {
     private Map<Long,Boolean> flagMap = new HashMap<>();
 
 
-    @RequestMapping(value = "/do_miaosha",method = RequestMethod.POST)
+    @RequestMapping(value = "/{path}/do_miaosha",method = RequestMethod.POST)
     @ResponseBody
-    public Result miaosha( User user, @RequestParam("goodsId")Long goodsId){
+    public Result miaosha( User user, @PathVariable("path")String path, @RequestParam("goodsId")Long goodsId){
         /*
           判断用户是否登录
          */
         if (user==null){
             return Result.error(CodeMsg.SESSION_ERROR);
+        }
+
+        boolean check = checkPath(path,user.getId(),goodsId);
+        if (!check){
+            return Result.error(CodeMsg.REQUEST_ILLEGAL);
         }
 
         if (flagMap.get(goodsId)){
@@ -104,6 +111,13 @@ public class MiaoshaController implements InitializingBean {
 //        return Result.success(order);
     }
 
+    private boolean checkPath(String path, Long userId, Long goodsId) {
+        if (path==null||userId==null||goodsId==null){
+            return false;
+        }
+         return path.equals(redisService.get(MiaoshaKey.miaoshaPath,""+userId+goodsId,String.class));
+    }
+
     /**
      * 0:排队中
      * -1:失败
@@ -117,6 +131,16 @@ public class MiaoshaController implements InitializingBean {
         return Result.success(resultStatus);
     }
 
+    @RequestMapping("/path")
+    @ResponseBody
+    public Result<String> getMiaoshaPath(User user,@RequestParam("goodsId") long goodsId){
+        if (user==null){
+            return Result.error(CodeMsg.SESSION_ERROR);
+        }
+        String path = MD5Util.md5(UUIDUtil.uuid());
+        redisService.set(MiaoshaKey.miaoshaPath,""+user.getId()+goodsId,path);
+        return Result.success(path);
+    }
     @Override
     public void afterPropertiesSet() throws Exception {
         List<GoodsVo> goodsVos = goodsService.listGoodsVo();
