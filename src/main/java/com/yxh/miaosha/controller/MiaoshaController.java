@@ -70,7 +70,7 @@ public class MiaoshaController implements InitializingBean {
           一次内存查询
          */
         long stock = redisService.decr(GoodsKey.msGoodsStock,String.valueOf(goodsId));
-        if (stock<=0){
+        if (stock<0){
             flagMap.put(goodsId,true);
             return Result.error(CodeMsg.MIAOSHA_OVER);
         }
@@ -120,7 +120,6 @@ public class MiaoshaController implements InitializingBean {
     @Override
     public void afterPropertiesSet() throws Exception {
         List<GoodsVo> goodsVos = goodsService.listGoodsVo();
-
         if(goodsVos!=null){
             for (GoodsVo goods:
                  goodsVos) {
