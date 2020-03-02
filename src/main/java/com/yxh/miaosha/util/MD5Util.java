@@ -10,7 +10,7 @@ public class MD5Util {
 
     private static String salt = "1a2b3c4d";
 
-    public static String md5(String src){
+    public   static String md5(String src){
         return DigestUtils.md5Hex(src);
     }
     public static String inputPassToFormPass(String inputPass){
@@ -29,7 +29,8 @@ public class MD5Util {
     }
 
     public static void main(String[] args) {
-        System.out.println(formPassToDBPass("e7204e8624b1cf00f6ba56f88e47a455","2020aaa"));
+        String formPass = inputPassToFormPass("000000");
+        System.out.println(formPassToDBPass(formPass,salt));
     }
 
 }

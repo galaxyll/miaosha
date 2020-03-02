@@ -2,6 +2,7 @@ com/yxh/miaosha/domain/Goods.class
 com/yxh/miaosha/domain/OrderInfo.class
 com/yxh/miaosha/redis/key/GoodsKey.class
 com/yxh/miaosha/rabbitmq/MQSender.class
+com/yxh/miaosha/redis/key/MiaoshaKey.class
 com/yxh/miaosha/dao/GoodsDao.class
 com/yxh/miaosha/vo/LoginVo.class
 com/yxh/miaosha/redis/JedisPoolFactory.class
@@ -16,6 +17,7 @@ META-INF/spring-configuration-metadata.json
 com/yxh/miaosha/controller/GoodsController.class
 com/yxh/miaosha/domain/MiaoshaGoods.class
 com/yxh/miaosha/domain/User.class
+com/yxh/miaosha/interceptor/LoginInterceptor.class
 com/yxh/miaosha/vo/GoodsVo.class
 com/yxh/miaosha/controller/LoginController.class
 com/yxh/miaosha/domain/MiaoshaOrder.class
@@ -29,6 +31,7 @@ com/yxh/miaosha/redis/key/OrderKey.class
 com/yxh/miaosha/dao/UserDao.class
 com/yxh/miaosha/controller/OrderController.class
 com/yxh/miaosha/rabbitmq/MiaoshaMessage.class
+com/yxh/miaosha/config/MyWebMvcConfigurer.class
 com/yxh/miaosha/result/CodeMsg.class
 com/yxh/miaosha/result/Result.class
 com/yxh/miaosha/vo/GoodsDetailVo.class

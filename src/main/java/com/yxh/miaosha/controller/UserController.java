@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
  * @date 20-2-11 - 上午9:21
  */
 @Controller
+@RequestMapping("/user")
 public class UserController {
 
     @Autowired
@@ -21,7 +22,7 @@ public class UserController {
     @Autowired
     private MQSender sender;
 
-    @RequestMapping("/register")
+    @RequestMapping("/do_register")
     public void register(LoginVo loginVo){
 
         userService.register(loginVo);

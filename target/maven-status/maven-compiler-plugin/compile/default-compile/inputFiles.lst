@@ -13,6 +13,7 @@
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/validator/IsMobile.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/service/MiaoshaService.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/validator/IsMobileValidator.java
+/home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/redis/key/MiaoshaKey.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/vo/LoginVo.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/vo/GoodsDetailVo.java
 /home/galaxy/IdeaProjects/miaosha/src/main/java/com/yxh/miaosha/service/UserService.java

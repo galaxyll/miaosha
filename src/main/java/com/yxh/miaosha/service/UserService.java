@@ -90,7 +90,7 @@ public class UserService {
     }
 
     public boolean register(LoginVo loginVo){
-        String salt = "1a3b5d";
+        String salt = "1a2b3d";
         String mobile = loginVo.getMobile();
         String formPass = loginVo.getPassword();
         String dbPass = MD5Util.formPassToDBPass(formPass,salt);
